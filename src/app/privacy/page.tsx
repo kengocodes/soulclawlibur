@@ -119,7 +119,7 @@ export default function PrivacyPage() {
           <p>
             SOULCLAWLIBUR is open source. The complete source code is publicly available on{" "}
             <Link
-              href="https://github.com/openclaw/soulclawlibur"
+              href="https://github.com/kengocodes/soulclawlibur"
               className="text-biolume-cyan hover:underline"
               target="_blank"
               rel="noopener noreferrer"
@@ -135,7 +135,7 @@ export default function PrivacyPage() {
             Since SOULCLAWLIBUR is open source, you can review the source code to verify our privacy
             claims firsthand. For questions, visit our{" "}
             <Link
-              href="https://github.com/openclaw/soulclawlibur"
+              href="https://github.com/kengocodes/soulclawlibur"
               className="text-biolume-cyan hover:underline"
               target="_blank"
               rel="noopener noreferrer"

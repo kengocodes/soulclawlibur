@@ -86,7 +86,7 @@ export default function Home() {
             {/* Social icons */}
             <div className="flex items-center gap-4">
               <Link
-                href="https://github.com/openclaw"
+                href="https://github.com/kengocodes/soulclawlibur"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-foam-muted hover:text-foam transition-colors"
@@ -94,7 +94,7 @@ export default function Home() {
                 <Github className="w-5 h-5" />
               </Link>
               <Link
-                href="https://x.com/openclaw"
+                href="https://x.com/kevin_t_ngo"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-foam-muted hover:text-foam transition-colors"

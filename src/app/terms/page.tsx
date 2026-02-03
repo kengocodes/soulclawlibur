@@ -136,7 +136,7 @@ export default function TermsPage() {
           <p>
             The complete license terms are available in the{" "}
             <Link
-              href="https://github.com/openclaw/soulclawlibur/blob/main/LICENSE"
+              href="https://github.com/kengocodes/soulclawlibur/blob/main/LICENSE"
               className="text-biolume-cyan hover:underline"
               target="_blank"
               rel="noopener noreferrer"

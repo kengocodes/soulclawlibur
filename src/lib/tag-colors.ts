@@ -1,4 +1,4 @@
-export const tagVariants = [
+const tagVariants = [
   {
     bg: "bg-[#1e3a4d]",
     text: "text-[#a8c5d8]",
@@ -21,7 +21,7 @@ export const tagVariants = [
   },
 ] as const;
 
-export function getTagVariant(tag: string) {
+function getTagVariant(tag: string) {
   const hash = tag.split("").reduce((acc, char) => acc + char.charCodeAt(0), 0);
   return tagVariants[hash % tagVariants.length];
 }
