@@ -23,11 +23,34 @@ const firaCode = Fira_Code({
 });
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://soulclawlibur.com"), // Update with your production URL
   title: "SOULCLAWLIBUR // Persona Archive",
   description: "soul.md persona files for OpenClaw bots",
   icons: {
     icon: "/favicon.png",
     apple: "/favicon.png",
+  },
+  openGraph: {
+    title: "SOULCLAWLIBUR // Persona Archive",
+    description: "soul.md persona files for OpenClaw bots",
+    url: "/",
+    siteName: "SOULCLAWLIBUR",
+    images: [
+      {
+        url: "/og-image.png",
+        width: 1920,
+        height: 1080,
+        alt: "SOULCLAWLIBUR - Persona Archive for OpenClaw Bots",
+      },
+    ],
+    locale: "en_US",
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "SOULCLAWLIBUR // Persona Archive",
+    description: "soul.md persona files for OpenClaw bots",
+    images: ["/og-image.png"],
   },
 };
 
