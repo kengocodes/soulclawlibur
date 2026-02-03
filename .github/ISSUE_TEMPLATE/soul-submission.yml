@@ -1,0 +1,103 @@
+name: Soul Submission
+description: Submit a new SOUL.md personality profile
+title: "Soul Submission: [NAME]"
+labels: ["submission", "pending-review"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for submitting a soul! Please fill out the fields below.
+
+        By submitting, you agree to our Terms of Use and license your
+        contribution under the MIT License.
+
+  - type: input
+    id: name
+    attributes:
+      label: Soul Name
+      placeholder: "The Adventurer"
+    validations:
+      required: true
+
+  - type: input
+    id: tagline
+    attributes:
+      label: Tagline
+      placeholder: "Curious explorer energy"
+    validations:
+      required: true
+
+  - type: dropdown
+    id: tags
+    attributes:
+      label: Tags (select 1-5)
+      multiple: true
+      options:
+        - supportive
+        - casual
+        - energetic
+        - introspective
+        - warm
+        - thoughtful
+        - chaotic
+        - creative
+        - unfiltered
+        - experienced
+        - direct
+        - caring
+        - gentle
+        - calming
+        - practical
+        - efficient
+        - curious
+        - passionate
+        - knowledgeable
+        - sarcastic
+        - clever
+        - encouraging
+        - optimistic
+    validations:
+      required: true
+
+  - type: textarea
+    id: soul
+    attributes:
+      label: SOUL.md Content
+      description: Paste your complete SOUL.md file
+      placeholder: |
+        # SOUL.md - Who You Are
+
+        *Your description here*
+
+        ## VIBE:
+        ...
+    validations:
+      required: true
+
+  - type: textarea
+    id: responses
+    attributes:
+      label: Example Responses (3-5 Q&A pairs)
+      description: Format as "Q: question" and "A: answer"
+      placeholder: |
+        Q: How do you handle stress?
+        A: Your answer here...
+
+        Q: What's your life philosophy?
+        A: Your answer here...
+    validations:
+      required: true
+
+  - type: checkboxes
+    id: agreements
+    attributes:
+      label: Agreements
+      options:
+        - label: I am the original author of this content or have rights to submit it
+          required: true
+        - label: I agree to license this submission under the MIT License
+          required: true
+        - label: This content does not contain personal data about real individuals
+          required: true
+        - label: I have read and agree to the Terms of Use
+          required: true

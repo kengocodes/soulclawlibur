@@ -67,6 +67,17 @@ export default async function SoulPage({
             {soul.tagline}
           </p>
 
+          {/* Author attribution */}
+          {soul.author && (
+            <p className="mt-2 text-xs text-foam-faint font-mono">
+              by {soul.authorUrl ? (
+                <Link href={soul.authorUrl} className="text-biolume-cyan hover:underline" target="_blank" rel="noopener noreferrer">
+                  {soul.author}
+                </Link>
+              ) : soul.author}
+            </p>
+          )}
+
           {/* Tags */}
           <div className="mt-5 flex flex-wrap gap-2">
             {soul.tags.map((tag) => (

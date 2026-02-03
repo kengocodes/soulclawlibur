@@ -24,7 +24,7 @@ export default function PrivacyPage() {
           Privacy Policy
         </h1>
         <p className="mt-4 text-foam-muted text-sm font-mono">
-          Last updated: February 2, 2026
+          Last updated: February 3, 2026
         </p>
       </header>
 
@@ -72,6 +72,29 @@ export default function PrivacyPage() {
             information as part of standard server operations, but we don&apos;t access, use, or
             retain these logs.
           </p>
+        </Section>
+
+        <Section title="Soul Submissions">
+          <p>
+            If you submit a SOUL.md personality profile through our API or GitHub:
+          </p>
+          <ul className="list-disc list-inside space-y-2 text-foam-muted">
+            <li>We collect the content you submit (the SOUL.md text, name, tags, and example responses)</li>
+            <li>We may log your IP address temporarily for rate limiting and abuse prevention</li>
+            <li>Submitted content is sent to GitHub as a public issue for moderation</li>
+            <li>Approved submissions become part of the public archive under the MIT License</li>
+            <li>We do not collect personal information beyond what you voluntarily include in your submission</li>
+            <li>IP addresses are not stored permanently and are only used for rate limiting</li>
+          </ul>
+          <p>
+            By submitting a soul profile, you agree that:
+          </p>
+          <ul className="list-disc list-inside space-y-2 text-foam-muted">
+            <li>Your submission may be publicly visible as a GitHub issue</li>
+            <li>Approved submissions will be published under the MIT License</li>
+            <li>You are the original author or have rights to submit the content</li>
+            <li>Your submission does not contain personal data about third parties</li>
+          </ul>
         </Section>
 
         <Section title="Your Rights">

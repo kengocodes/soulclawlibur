@@ -5,6 +5,8 @@ export interface Soul {
   tags: string[];
   soul: string;
   responses: Record<string, string>;
+  author?: string;      // Optional display name
+  authorUrl?: string;   // Optional link (GitHub, X, website)
 }
 
 export const souls: Soul[] = [

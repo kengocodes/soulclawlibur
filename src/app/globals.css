@@ -120,6 +120,16 @@ body::after {
   background: hsl(var(--biolume-cyan) / 0.5);
 }
 
+/* Hide scrollbar utility */
+.scrollbar-hide {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}
+
 /* Focus ring */
 :focus-visible {
   outline: 2px solid hsl(var(--biolume-cyan));

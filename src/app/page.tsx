@@ -45,6 +45,20 @@ export default function Home() {
         <p className="text-foam-muted max-w-lg mx-auto leading-relaxed text-sm sm:text-base">
           <span className="text-biolume-cyan">SOUL.md</span> personality files for your OpenClaw bot.
         </p>
+
+        {/* Submit CTA */}
+        <div className="mt-8 pt-6 border-t border-shell-border/30 max-w-md mx-auto">
+          <p className="text-foam-muted/90 text-sm">
+            Have a soul to share?{" "}
+            <Link
+              href="/submit"
+              className="text-biolume-cyan hover:underline font-medium"
+            >
+              Submit your SOUL.md
+            </Link>
+            {" "}via API or GitHub.
+          </p>
+        </div>
       </header>
 
       {/* Search and grid */}
@@ -89,6 +103,7 @@ export default function Home() {
                 href="https://github.com/kengocodes/soulclawlibur"
                 target="_blank"
                 rel="noopener noreferrer"
+                aria-label="GitHub repository"
                 className="text-foam-muted hover:text-foam transition-colors"
               >
                 <Github className="w-5 h-5" />
@@ -97,9 +112,10 @@ export default function Home() {
                 href="https://x.com/kevin_t_ngo"
                 target="_blank"
                 rel="noopener noreferrer"
+                aria-label="X (Twitter) profile"
                 className="text-foam-muted hover:text-foam transition-colors"
               >
-                <svg className="w-5 h-5" viewBox="0 0 24 24" fill="currentColor">
+                <svg className="w-5 h-5" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
                   <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z" />
                 </svg>
               </Link>
@@ -109,6 +125,12 @@ export default function Home() {
 
             {/* Legal links */}
             <div className="flex items-center gap-4 text-xs font-mono">
+              <Link
+                href="/submit"
+                className="text-foam-muted hover:text-foam transition-colors"
+              >
+                Submit
+              </Link>
               <Link
                 href="/privacy"
                 className="text-foam-muted hover:text-foam transition-colors"

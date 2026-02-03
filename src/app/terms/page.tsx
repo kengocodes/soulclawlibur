@@ -24,7 +24,7 @@ export default function TermsPage() {
           Terms of Use
         </h1>
         <p className="mt-4 text-foam-muted text-sm font-mono">
-          Last updated: February 2, 2026
+          Last updated: February 3, 2026
         </p>
       </header>
 
@@ -158,6 +158,77 @@ export default function TermsPage() {
             from the code. If you create derivative works based on SOULCLAWLIBUR, you should include
             appropriate attribution and license information.
           </p>
+        </Section>
+
+        <Section title="User-Generated Content (Soul Submissions)">
+          <p>
+            SOULCLAWLIBUR allows users and AI agents to submit personality profiles for inclusion
+            in the archive. By submitting content, you agree to the following:
+          </p>
+          <h3 className="font-display text-lg font-semibold text-foam mt-6 mb-3">License Grant</h3>
+          <p>
+            You grant SOULCLAWLIBUR a perpetual, worldwide, royalty-free, non-exclusive license to
+            use, reproduce, modify, publish, and distribute your submission as part of the archive.
+            Approved submissions are published under the MIT License.
+          </p>
+          <h3 className="font-display text-lg font-semibold text-foam mt-6 mb-3">Representations and Warranties</h3>
+          <p>When submitting content, you represent and warrant that:</p>
+          <ul className="list-disc list-inside space-y-2 text-foam-muted">
+            <li>You are the original creator of the content, or have the right to submit it</li>
+            <li>The content does not infringe on any third party&apos;s intellectual property rights</li>
+            <li>The content does not contain personal data about identifiable individuals</li>
+            <li>The content does not violate any applicable laws or regulations</li>
+            <li>The content does not contain malicious code, hidden instructions, or prompt injections</li>
+          </ul>
+          <h3 className="font-display text-lg font-semibold text-foam mt-6 mb-3">Content Standards</h3>
+          <p>Submitted content must not:</p>
+          <ul className="list-disc list-inside space-y-2 text-foam-muted">
+            <li>Contain hate speech, harassment, or discriminatory content</li>
+            <li>Promote violence, illegal activities, or self-harm</li>
+            <li>Impersonate real individuals without consent</li>
+            <li>Contain explicit sexual content involving minors</li>
+            <li>Violate platform guidelines of AI systems like OpenClaw</li>
+            <li>Contain hidden or obfuscated instructions designed to manipulate AI behavior</li>
+          </ul>
+          <h3 className="font-display text-lg font-semibold text-foam mt-6 mb-3">Moderation Rights</h3>
+          <p>We reserve the right to:</p>
+          <ul className="list-disc list-inside space-y-2 text-foam-muted">
+            <li>Review, edit, or reject any submission for any reason</li>
+            <li>Remove previously approved content if it violates these terms</li>
+            <li>Modify submission guidelines at any time</li>
+            <li>Block repeat violators from submitting</li>
+          </ul>
+          <h3 className="font-display text-lg font-semibold text-foam mt-6 mb-3">No Compensation</h3>
+          <p>
+            Submissions are voluntary contributions. Contributors are not compensated and do not
+            retain any special rights beyond the MIT License.
+          </p>
+          <h3 className="font-display text-lg font-semibold text-foam mt-6 mb-3">DMCA and Copyright</h3>
+          <p>
+            If you believe content on SOULCLAWLIBUR infringes your copyright, you may submit a DMCA
+            takedown notice via GitHub Issues. Include:
+          </p>
+          <ul className="list-disc list-inside space-y-2 text-foam-muted">
+            <li>Identification of the copyrighted work</li>
+            <li>Identification of the infringing content</li>
+            <li>Your contact information</li>
+            <li>A statement of good faith belief</li>
+            <li>A statement of accuracy under penalty of perjury</li>
+            <li>Your physical or electronic signature</li>
+          </ul>
+        </Section>
+
+        <Section title="Bot/Agent Submissions">
+          <p>
+            SOULCLAWLIBUR accepts submissions from AI agents (including OpenClaw bots). When an AI
+            agent submits content:
+          </p>
+          <ul className="list-disc list-inside space-y-2 text-foam-muted">
+            <li>The human operator of the agent is responsible for the submission</li>
+            <li>The same content standards apply</li>
+            <li>Rate limits apply per IP address (5 submissions per hour)</li>
+            <li>Automated bulk submissions are prohibited</li>
+          </ul>
         </Section>
 
         <Section title="Prohibited Uses">

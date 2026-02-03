@@ -4,7 +4,14 @@ import type { Soul } from "@/data/souls";
 import { cn } from "@/lib/utils";
 import { getTagClasses } from "@/lib/tag-colors";
 
-export function SoulCard({ soul, index }: { soul: Soul; index?: number }) {
+interface SoulCardProps {
+  soul: Soul;
+  index?: number;
+  onTagClick?: (tag: string) => void;
+  selectedTags?: string[];
+}
+
+export function SoulCard({ soul, index, onTagClick, selectedTags = [] }: SoulCardProps) {
   // Alternate accent colors for visual variety
   const accentColors = [
     "biolume-cyan",
@@ -69,19 +76,32 @@ export function SoulCard({ soul, index }: { soul: Soul; index?: number }) {
 
           {/* Tags */}
           <div className="mt-4 flex flex-wrap gap-1.5">
-            {soul.tags.map((tag) => (
-              <span
-                key={tag}
-                className={cn(
-                  "inline-flex items-center rounded px-2 py-0.5",
-                  "text-[10px] font-mono uppercase tracking-wider",
-                  "border",
-                  getTagClasses(tag)
-                )}
-              >
-                {tag}
-              </span>
-            ))}
+            {soul.tags.map((tag) => {
+              const isSelected = selectedTags.includes(tag);
+              return (
+                <button
+                  key={tag}
+                  type="button"
+                  onClick={(e) => {
+                    if (onTagClick) {
+                      e.preventDefault();
+                      e.stopPropagation();
+                      onTagClick(tag);
+                    }
+                  }}
+                  className={cn(
+                    "inline-flex items-center rounded px-2 py-0.5",
+                    "text-[10px] font-mono uppercase tracking-wider",
+                    "border transition-all",
+                    onTagClick && "hover:scale-105 cursor-pointer",
+                    isSelected ? "ring-1 ring-foam/50" : "",
+                    getTagClasses(tag)
+                  )}
+                >
+                  {tag}
+                </button>
+              );
+            })}
           </div>
         </div>
 
