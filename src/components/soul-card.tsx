@@ -33,11 +33,11 @@ export function SoulCard({ soul, index, onTagClick, selectedTags = [] }: SoulCar
         {/* Top accent bar */}
         <div
           className={cn(
-            "h-1 w-full",
-            accent === "biolume-cyan" && "bg-gradient-to-r from-biolume-cyan/60 to-transparent",
-            accent === "biolume-magenta" && "bg-gradient-to-r from-biolume-magenta/60 to-transparent",
-            accent === "biolume-green" && "bg-gradient-to-r from-biolume-green/60 to-transparent",
-            accent === "biolume-amber" && "bg-gradient-to-r from-biolume-amber/60 to-transparent"
+            "h-1.5 w-full",
+            accent === "biolume-cyan" && "bg-gradient-to-r from-biolume-cyan to-transparent",
+            accent === "biolume-magenta" && "bg-gradient-to-r from-biolume-magenta to-transparent",
+            accent === "biolume-green" && "bg-gradient-to-r from-biolume-green to-transparent",
+            accent === "biolume-amber" && "bg-gradient-to-r from-biolume-amber to-transparent"
           )}
         />
 
@@ -48,15 +48,15 @@ export function SoulCard({ soul, index, onTagClick, selectedTags = [] }: SoulCar
             <div className="flex items-center gap-2.5">
               <div className={cn(
                 "p-1.5 rounded",
-                accent === "biolume-cyan" && "bg-biolume-cyan/10 text-biolume-cyan",
-                accent === "biolume-magenta" && "bg-biolume-magenta/10 text-biolume-magenta",
-                accent === "biolume-green" && "bg-biolume-green/10 text-biolume-green",
-                accent === "biolume-amber" && "bg-biolume-amber/10 text-biolume-amber"
+                accent === "biolume-cyan" && "bg-biolume-cyan/15 text-biolume-cyan",
+                accent === "biolume-magenta" && "bg-biolume-magenta/15 text-biolume-magenta",
+                accent === "biolume-green" && "bg-biolume-green/15 text-biolume-green",
+                accent === "biolume-amber" && "bg-biolume-amber/15 text-biolume-amber"
               )}>
-                <FileCode className="w-4 h-4" />
+                <FileCode className="w-5 h-5" />
               </div>
               <div>
-                <h2 className="font-display font-semibold text-foam tracking-tight">
+                <h2 className="font-display font-bold text-foam tracking-tight">
                   {soul.name}
                 </h2>
                 <p className="text-[10px] font-mono text-foam-faint">
@@ -66,7 +66,7 @@ export function SoulCard({ soul, index, onTagClick, selectedTags = [] }: SoulCar
             </div>
 
             {/* Hover arrow */}
-            <ChevronRight className="w-4 h-4 text-foam-faint" />
+            <ChevronRight className="w-4 h-4 text-foam-faint transition-colors group-hover:text-biolume-cyan" />
           </div>
 
           {/* Description */}

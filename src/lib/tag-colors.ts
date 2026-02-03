@@ -1,23 +1,23 @@
 const tagVariants = [
   {
-    bg: "bg-[#1e3a4d]",
-    text: "text-[#a8c5d8]",
-    border: "border-[#2d4f66]",
+    bg: "bg-[#1a4a66]",
+    text: "text-[#7dd3fc]",
+    border: "border-[#2d6080]",
   },
   {
-    bg: "bg-[#3d2942]",
-    text: "text-[#d4a8c4]",
-    border: "border-[#553758]",
+    bg: "bg-[#4d1a40]",
+    text: "text-[#f0abdc]",
+    border: "border-[#6b2857]",
   },
   {
-    bg: "bg-[#1e3d2e]",
-    text: "text-[#a8d4b8]",
-    border: "border-[#2d5540]",
+    bg: "bg-[#1a4d33]",
+    text: "text-[#86efac]",
+    border: "border-[#2d6645]",
   },
   {
-    bg: "bg-[#3d351e]",
-    text: "text-[#d4c4a8]",
-    border: "border-[#554a2d]",
+    bg: "bg-[#4d3d1a]",
+    text: "text-[#fcd34d]",
+    border: "border-[#6b5a2d]",
   },
 ] as const;
 

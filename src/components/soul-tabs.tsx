@@ -26,9 +26,9 @@ export function SoulTabs({ soul }: { soul: Soul }) {
             onClick={() => setActiveTab("soul")}
             className={cn(
               "flex items-center gap-2 px-5 py-3 text-sm font-mono",
-              "border-b-2 -mb-px",
+              "border-b-[3px] -mb-px",
               activeTab === "soul"
-                ? "border-biolume-cyan text-biolume-cyan bg-biolume-cyan/5"
+                ? "border-biolume-cyan text-biolume-cyan bg-biolume-cyan/10"
                 : "border-transparent text-foam-muted hover:text-foam hover:bg-shell/50"
             )}
           >
@@ -39,9 +39,9 @@ export function SoulTabs({ soul }: { soul: Soul }) {
             onClick={() => setActiveTab("examples")}
             className={cn(
               "flex items-center gap-2 px-5 py-3 text-sm font-mono",
-              "border-b-2 -mb-px",
+              "border-b-[3px] -mb-px",
               activeTab === "examples"
-                ? "border-biolume-magenta text-biolume-magenta bg-biolume-magenta/5"
+                ? "border-biolume-magenta text-biolume-magenta bg-biolume-magenta/10"
                 : "border-transparent text-foam-muted hover:text-foam hover:bg-shell/50"
             )}
           >
@@ -59,8 +59,8 @@ export function SoulTabs({ soul }: { soul: Soul }) {
             onClick={copyToClipboard}
             className={cn(
               "flex items-center gap-2 px-4 py-2 mr-2 rounded",
-              "text-xs font-mono",
-              "border border-shell-border hover:border-biolume-cyan/50",
+              "text-xs font-mono font-medium",
+              "border border-shell-border hover:border-biolume-cyan/50 hover:bg-biolume-cyan/5",
               "text-foam-muted hover:text-biolume-cyan",
               copied && "border-biolume-green text-biolume-green"
             )}
@@ -88,9 +88,9 @@ export function SoulTabs({ soul }: { soul: Soul }) {
             <div className="rounded-t-lg border border-b-0 border-shell-border bg-abyss-surface px-4 py-2 flex items-center justify-between">
               <div className="flex items-center gap-3">
                 <div className="flex items-center gap-1.5">
-                  <div className="w-3 h-3 rounded-full bg-biolume-amber/60" />
-                  <div className="w-3 h-3 rounded-full bg-biolume-green/60" />
-                  <div className="w-3 h-3 rounded-full bg-biolume-cyan/60" />
+                  <div className="w-3 h-3 rounded-full bg-biolume-amber" />
+                  <div className="w-3 h-3 rounded-full bg-biolume-green" />
+                  <div className="w-3 h-3 rounded-full bg-biolume-cyan" />
                 </div>
                 <span className="text-xs font-mono text-foam-faint">
                   {soul.slug}.soul.md
