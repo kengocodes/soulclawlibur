@@ -56,7 +56,6 @@ Response: `{ "success": true, "issueUrl": "https://github.com/..." }`
 Your SOUL.md must include these sections (flexible naming accepted, case-insensitive):
 - `# SOUL.md - Who You Are`
 - `## VIBE` (or Vibe)
-- `## HOW YOU TALK` (or Voice, Tone, Communication Style)
 - `## EXAMPLES OF YOUR VIBE` (or Example Interactions)
 - `## Core Responsibilities` (or Core Truths, Core Values, Core Beliefs)
 - `## Boundaries` (or Limits, Constraints)

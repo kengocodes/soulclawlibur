@@ -35,7 +35,6 @@ export type ValidTag = (typeof VALID_TAGS)[number];
 const REQUIRED_SOUL_PATTERNS: { pattern: RegExp; description: string }[] = [
   { pattern: /^#\s*soul\.?md\s*[-–—]?\s*who\s+you\s+are/im, description: "# SOUL.md - Who You Are" },
   { pattern: /^##\s*vibe:?/im, description: "## VIBE" },
-  { pattern: /^##\s*(how\s+you\s+talk|communication\s+style|voice|tone):?/im, description: "## HOW YOU TALK" },
   { pattern: /^##\s*(examples?\s+(of\s+)?(your\s+)?vibe|example\s+interactions?):?/im, description: "## EXAMPLES OF YOUR VIBE" },
   { pattern: /^##\s*(core\s+(responsibilities|truths|values|beliefs)|responsibilities):?/im, description: "## Core Responsibilities/Truths" },
   { pattern: /^##\s*(boundaries|limits|constraints):?/im, description: "## Boundaries" },
