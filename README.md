@@ -4,11 +4,11 @@
 
 **Archive of personality profiles for OpenClaw bots**
 
-[![Next.js](https://img.shields.io/badge/Next.js-15-black)](https://nextjs.org/)
-[![TypeScript](https://img.shields.io/badge/TypeScript-5.7-blue)](https://www.typescriptlang.org/)
+[![Next.js](https://img.shields.io/badge/Next.js-16-black)](https://nextjs.org/)
+[![TypeScript](https://img.shields.io/badge/TypeScript-5.9-blue)](https://www.typescriptlang.org/)
 [![React](https://img.shields.io/badge/React-19-61dafb)](https://react.dev/)
 
-[View Archive](https://openclaw.com) • [OpenClaw GitHub](https://github.com/openclaw) • [OpenClaw on X](https://x.com/openclaw)
+[View Archive](https://soulclawlibur.com) • [OpenClaw GitHub](https://github.com/openclaw) • [OpenClaw on X](https://x.com/openclaw)
 
 </div>
 
@@ -18,15 +18,17 @@
 
 SOULCLAWLIBUR is a curated collection of SOUL.md personality profiles for OpenClaw bots. Each profile defines a distinct persona with unique communication styles, example responses, and behavioral guidelines.
 
+Browse the archive to discover personality archetypes, or submit your own creations to be featured.
+
 ### Featured Personas
 
-- **The Hype One** - Your supportive cheerleader friend
+- **The Hype One** - Supportive cheerleader friend
 - **The Night Owl** - Introspective late-night companion
-- **The Chaos Agent** - Unhinged creative energy
-- **The Wise Aunt** - Experienced life advisor
-- **The Quiet One** - Gentle, thoughtful introvert
+- **The Chaos Agent** - Chaotic good creative energy
+- **The Wise Aunt** - Direct, experienced life advisor
+- **The Quiet One** - Gentle, calming introvert
 - **The Fixer** - Practical problem-solver
-- **The Nerd** - Enthusiastic knowledge sharer
+- **The Nerd** - Passionate knowledge enthusiast
 - **The Dry Wit** - Sarcastic comedian
 - **The Believer** - Motivational optimist
 
@@ -36,7 +38,7 @@ SOULCLAWLIBUR is a curated collection of SOUL.md personality profiles for OpenCl
 
 ```bash
 # Clone the repository
-git clone https://github.com/openclaw/soulclawlibur.git
+git clone https://github.com/kengocodes/soulclawlibur.git
 cd soulclawlibur
 
 # Install dependencies
@@ -50,13 +52,36 @@ Open [http://localhost:3000](http://localhost:3000) to browse the archive.
 
 ---
 
+## Environment Setup
+
+For the submission API to work, create a `.env.local` file:
+
+```env
+GITHUB_TOKEN=your_github_token_here
+```
+
+The token needs permission to create issues in the repository.
+
+---
+
 ## Tech Stack
 
-- **[Next.js 15](https://nextjs.org/)** - React framework with App Router
+- **[Next.js 16](https://nextjs.org/)** - React framework with App Router
 - **[React 19](https://react.dev/)** - UI library
-- **[TypeScript](https://www.typescriptlang.org/)** - Type safety
+- **[TypeScript 5.9](https://www.typescriptlang.org/)** - Type safety
 - **[Tailwind CSS 4](https://tailwindcss.com/)** - Styling
 - **[Lucide React](https://lucide.dev/)** - Icons
+
+---
+
+## Features
+
+- **Search & Filter** - Find souls by name or filter by personality tags
+- **Soul Detail Pages** - View full SOUL.md content with syntax highlighting
+- **Example Responses** - See how each persona responds to common prompts
+- **Submit Your Own** - API endpoint for submitting new soul profiles
+- **Rate Limiting** - 5 submissions per hour per IP
+- **Content Validation** - Ensures submissions follow the SOUL.md format
 
 ---
 
@@ -77,19 +102,38 @@ npm start
 ```
 src/
 ├── app/
-│   ├── page.tsx           # Home page with search
-│   ├── layout.tsx         # Root layout
-│   └── souls/[slug]/      # Dynamic soul pages
+│   ├── page.tsx              # Home page with search
+│   ├── layout.tsx            # Root layout
+│   ├── globals.css           # Theme and animations
+│   ├── api/submit-soul/      # Submission API endpoint
+│   ├── souls/[slug]/         # Dynamic soul pages
+│   ├── submit/               # Submission documentation
+│   ├── privacy/              # Privacy policy
+│   └── terms/                # Terms of use
 ├── components/
-│   ├── search.tsx         # Search & filter
-│   ├── soul-card.tsx      # Soul preview cards
-│   └── soul-tabs.tsx      # Soul detail tabs
+│   ├── search.tsx            # Search & filter
+│   ├── soul-card.tsx         # Soul preview cards
+│   └── soul-tabs.tsx         # Soul detail tabs
 ├── data/
-│   └── souls.ts           # Soul profile data
+│   └── souls.ts              # Soul profile data
 └── lib/
-    ├── tag-colors.ts      # Tag styling
-    └── utils.ts           # Utilities
+    ├── tag-colors.ts         # Tag styling
+    ├── utils.ts              # Utilities
+    ├── validate-soul.ts      # Submission validation
+    ├── github.ts             # GitHub API integration
+    └── rate-limit.ts         # Rate limiting
 ```
+
+---
+
+## Submitting a Soul
+
+You can submit new soul profiles via:
+
+1. **API** - `POST /api/submit-soul` with JSON payload
+2. **GitHub** - Open an issue using the submission template
+
+Submissions are validated and reviewed before being added to the archive.
 
 ---
 
