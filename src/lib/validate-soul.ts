@@ -31,14 +31,15 @@ const VALID_TAGS = [
 
 export type ValidTag = (typeof VALID_TAGS)[number];
 
-const REQUIRED_SOUL_SECTIONS = [
-  "# SOUL.md - Who You Are",
-  "## VIBE:",
-  "## HOW YOU TALK:",
-  "## EXAMPLES OF YOUR VIBE:",
-  "## Core Responsibilities",
-  "## Boundaries",
-  "## Continuity",
+// Flexible section patterns - case insensitive, with alternatives
+const REQUIRED_SOUL_PATTERNS: { pattern: RegExp; description: string }[] = [
+  { pattern: /^#\s*soul\.?md\s*[-–—]?\s*who\s+you\s+are/im, description: "# SOUL.md - Who You Are" },
+  { pattern: /^##\s*vibe:?/im, description: "## VIBE" },
+  { pattern: /^##\s*(how\s+you\s+talk|communication\s+style|voice|tone):?/im, description: "## HOW YOU TALK" },
+  { pattern: /^##\s*(examples?\s+(of\s+)?(your\s+)?vibe|example\s+interactions?):?/im, description: "## EXAMPLES OF YOUR VIBE" },
+  { pattern: /^##\s*(core\s+(responsibilities|truths|values|beliefs)|responsibilities):?/im, description: "## Core Responsibilities/Truths" },
+  { pattern: /^##\s*(boundaries|limits|constraints):?/im, description: "## Boundaries" },
+  { pattern: /^##\s*(continuity|memory|persistence|context):?/im, description: "## Continuity" },
 ];
 
 export interface SoulSubmission {
@@ -120,10 +121,10 @@ export function validateSoulSubmission(body: unknown): ValidationResult {
     return { valid: false, error: "Soul content exceeds 50KB limit" };
   }
 
-  // Check required sections in soul
-  for (const section of REQUIRED_SOUL_SECTIONS) {
-    if (!submission.soul.includes(section)) {
-      return { valid: false, error: `Missing required section: ${section}` };
+  // Check required sections in soul (flexible matching)
+  for (const { pattern, description } of REQUIRED_SOUL_PATTERNS) {
+    if (!pattern.test(submission.soul)) {
+      return { valid: false, error: `Missing required section: ${description}` };
     }
   }
 

@@ -53,13 +53,13 @@ Response: `{ "success": true, "issueUrl": "https://github.com/..." }`
 
 ## SOUL.md Requirements
 
-Your SOUL.md must include these sections:
+Your SOUL.md must include these sections (flexible naming accepted, case-insensitive):
 - `# SOUL.md - Who You Are`
-- `## VIBE:`
-- `## HOW YOU TALK:`
-- `## EXAMPLES OF YOUR VIBE:`
-- `## Core Responsibilities`
-- `## Boundaries`
-- `## Continuity`
+- `## VIBE` (or Vibe)
+- `## HOW YOU TALK` (or Voice, Tone, Communication Style)
+- `## EXAMPLES OF YOUR VIBE` (or Example Interactions)
+- `## Core Responsibilities` (or Core Truths, Core Values, Core Beliefs)
+- `## Boundaries` (or Limits, Constraints)
+- `## Continuity` (or Memory, Persistence, Context)
 
-See existing souls at https://soulclawlibur.com for examples.
+Colons after section names are optional. See existing souls at https://soulclawlibur.com for examples.

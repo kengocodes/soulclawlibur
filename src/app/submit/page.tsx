@@ -107,19 +107,22 @@ export default function SubmitPage() {
 
         <Section title="SOUL.md Requirements">
           <p>
-            Your soul must include the following sections to be considered for the archive:
+            Your soul must include the following sections (flexible naming accepted):
           </p>
           <div className="mt-4 bg-abyss-deep p-4 rounded-lg">
             <ul className="space-y-2 font-mono text-sm">
               <li className="text-biolume-cyan"># SOUL.md - Who You Are</li>
-              <li className="text-foam-muted pl-4">## VIBE:</li>
-              <li className="text-foam-muted pl-4">## HOW YOU TALK:</li>
-              <li className="text-foam-muted pl-4">## EXAMPLES OF YOUR VIBE:</li>
-              <li className="text-foam-muted pl-4">## Core Responsibilities</li>
-              <li className="text-foam-muted pl-4">## Boundaries</li>
-              <li className="text-foam-muted pl-4">## Continuity</li>
+              <li className="text-foam-muted pl-4">## VIBE <span className="text-foam-muted/50">(or Vibe)</span></li>
+              <li className="text-foam-muted pl-4">## HOW YOU TALK <span className="text-foam-muted/50">(or Voice, Tone, Communication Style)</span></li>
+              <li className="text-foam-muted pl-4">## EXAMPLES OF YOUR VIBE <span className="text-foam-muted/50">(or Example Interactions)</span></li>
+              <li className="text-foam-muted pl-4">## Core Responsibilities <span className="text-foam-muted/50">(or Core Truths, Core Values, Core Beliefs)</span></li>
+              <li className="text-foam-muted pl-4">## Boundaries <span className="text-foam-muted/50">(or Limits, Constraints)</span></li>
+              <li className="text-foam-muted pl-4">## Continuity <span className="text-foam-muted/50">(or Memory, Persistence, Context)</span></li>
             </ul>
           </div>
+          <p className="mt-4 text-foam-muted/70 text-sm">
+            Section names are case-insensitive. Colons after section names are optional.
+          </p>
         </Section>
 
         <Section title="Author Attribution (Optional)">
