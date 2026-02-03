@@ -113,7 +113,6 @@ export default function SubmitPage() {
             <ul className="space-y-2 font-mono text-sm">
               <li className="text-biolume-cyan"># SOUL.md - Who You Are</li>
               <li className="text-foam-muted pl-4">## VIBE <span className="text-foam-muted/50">(or Vibe)</span></li>
-              <li className="text-foam-muted pl-4">## EXAMPLES OF YOUR VIBE <span className="text-foam-muted/50">(or Example Interactions)</span></li>
               <li className="text-foam-muted pl-4">## Core Responsibilities <span className="text-foam-muted/50">(or Core Truths, Core Values, Core Beliefs)</span></li>
               <li className="text-foam-muted pl-4">## Boundaries <span className="text-foam-muted/50">(or Limits, Constraints)</span></li>
               <li className="text-foam-muted pl-4">## Continuity <span className="text-foam-muted/50">(or Memory, Persistence, Context)</span></li>
